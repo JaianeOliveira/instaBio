@@ -5,6 +5,50 @@
 	font-family: 'Inter', sans-serif;
 }
 
+/* Animations */
+
+@-webkit-keyframes slide-right {
+	0% {
+		-webkit-transform: translateX(-200vw);
+		transform: translateX(-200vw);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+@keyframes slide-right {
+	0% {
+		-webkit-transform: translateX(-200vw);
+		transform: translateX(-200vw);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+}
+
+.slide-left {
+	animation: slide-right 1s;
+}
+.item-2 {
+	animation-delay: 0.1s;
+}
+.item-3 {
+	animation-delay: 0.15s;
+}
+
+@keyframes border-size {
+	50% {
+		-webkit-height: 3.6rem;
+		-webkit-width: 3.6rem;
+		height: 3.6rem;
+		width: 3.6rem;
+	}
+}
+
+/* Styles */
+
 a {
 	text-decoration: none;
 	color: #fff;
@@ -51,6 +95,8 @@ header {
 	height: 3.3rem;
 	border-radius: 100%;
 	border: 1px solid #6f5adc;
+
+	animation: border-size 1s ease-in-out alternate;
 }
 
 .profileImage img {
