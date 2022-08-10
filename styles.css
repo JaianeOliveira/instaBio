@@ -47,6 +47,17 @@
 	}
 }
 
+@keyframes slide-top {
+	0% {
+		-webkit-transform: translateY(-200vh);
+		transform: translateY(-200vh);
+	}
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
 /* Styles */
 
 a {
@@ -85,6 +96,8 @@ header {
 	justify-content: flex-start;
 
 	margin: 9vh 0 6vh 0;
+
+	animation: slide-top 0.2s ease-in-out;
 }
 
 .profileImage {
@@ -97,6 +110,7 @@ header {
 	border: 1px solid #6f5adc;
 
 	animation: border-size 1s ease-in-out alternate;
+	animation-delay: 0.8s;
 }
 
 .profileImage img {
@@ -110,6 +124,8 @@ header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
+	overflow: hidden;
 }
 .profileInfo h1 {
 	font-size: 1.1rem;
