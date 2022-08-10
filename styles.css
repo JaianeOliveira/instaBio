@@ -84,7 +84,14 @@ body {
 	flex-direction: column;
 	flex: 1;
 	height: 100vh;
-	background-color: #1e1a20;
+
+	background: rgb(34, 26, 40);
+	background: linear-gradient(
+		332deg,
+		rgba(34, 26, 40, 1) 0%,
+		rgba(30, 26, 32, 1) 100%,
+		rgba(34, 26, 40, 1) 100%
+	);
 	color: #fff;
 	padding: 8vw;
 }
